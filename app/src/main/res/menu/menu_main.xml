@@ -7,6 +7,19 @@
     android:id="@+id/mnSobre"
     app:showAsAction="always"
     android:icon="@drawable/ic_speaker_notes_black_24dp"/>
-
     <!-- o showAsAction é Para que os itens do menu apareçam dentro do actionbar e nao dentro do menu que sao os 3 pontos-->
+
+    <item
+        android:title="Buscar"
+        android:icon="@drawable/ic_find_replace_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/mnSearch"></item>
+
+    <item
+        android:id="@+id/Refresh"
+        android:icon="@drawable/ic_cached_black_24dp"
+        app:showAsAction="always"
+        android:title="Atualizar"
+        ></item>
+
 </menu>
