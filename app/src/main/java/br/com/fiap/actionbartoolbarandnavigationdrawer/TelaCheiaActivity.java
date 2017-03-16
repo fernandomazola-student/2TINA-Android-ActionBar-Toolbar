@@ -14,5 +14,10 @@ public class TelaCheiaActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         //Falando qual toolbar é a principal dentro da activity
         setSupportActionBar(toolbar);
+        toolbar.setLogo(R.drawable.ic_speaker_notes_black_24dp);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
     }
+
+
 }

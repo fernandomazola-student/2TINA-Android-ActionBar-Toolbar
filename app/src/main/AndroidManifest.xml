@@ -18,7 +18,7 @@
         <activity
             android:name=".SobreActivity"
             android:label="Sobre" />
-        <activity android:name=".TelaCheiaActivity" android:theme="@style/AppThemeTelaCheia"></activity>
+        <activity android:name=".TelaCheiaActivity" android:theme="@style/AppThemeTelaCheia" ></activity>
         <!-- Adicionando um tema na telacheia-->
     </application>
 
