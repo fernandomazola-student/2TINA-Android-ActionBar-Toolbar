@@ -5,9 +5,11 @@
 <item
     android:title="Sobre"
     android:id="@+id/mnSobre"
-    app:showAsAction="always"
+    app:showAsAction="never"
     android:icon="@drawable/ic_speaker_notes_black_24dp"/>
-    <!-- o showAsAction é Para que os itens do menu apareçam dentro do actionbar e nao dentro do menu que sao os 3 pontos-->
+    <!-- o showAsAction com always é Para que os itens do menu apareçam dentro do actionbar e nao dentro do menu que sao os 3 pontos-->
+    <!-- o showAsAction com never é Para que os itens do menu apareçam dentro dos 3 pontos-->
+    <!-- o showAsAction com ifrow é Para que se os itens do menu couberem apareçam dentro do actionbar se nao ele coloca dentro do menu dos 3 pontos-->
 
     <item
         android:title="Buscar"
@@ -18,7 +20,7 @@
     <item
         android:id="@+id/Refresh"
         android:icon="@drawable/ic_cached_black_24dp"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:title="Atualizar"
         ></item>
 

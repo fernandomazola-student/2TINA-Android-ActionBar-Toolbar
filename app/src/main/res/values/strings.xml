@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ActionBar Toolbar And NavigationDrawer</string>
+    <string name="abrir_tela_cheia">Abrir Tela Cheia</string>
 </resources>

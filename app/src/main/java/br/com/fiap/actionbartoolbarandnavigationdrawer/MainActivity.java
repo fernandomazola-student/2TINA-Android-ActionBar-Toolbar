@@ -1,10 +1,12 @@
 package br.com.fiap.actionbartoolbarandnavigationdrawer;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Metodo da actiivty
-
+    //Metodos da activivty
+    //Infla o menu com itens do xml assim que carrega o doc
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //Vamos sobrescrever para criar o menuzinho la em cima
@@ -34,11 +36,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Pegando os cliques nos elementos que estao na actionbar
+    //Verifica qual item foi clicado na ActionBar e realiza uma ação
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.mnSobre){
-            Toast.makeText(this, "Clicou em sobre", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Clicou em sobre", Toast.LENGTH_SHORT).show();
+            Intent it = new Intent(this, SobreActivity.class);
+            startActivity(it);
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void abrirTelaCheia (View view){
+        Intent it = new Intent(this, TelaCheiaActivity.class);
+        startActivity(it);
+    }
+
 }

@@ -15,6 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SobreActivity"
+            android:label="Sobre" />
+        <activity android:name=".TelaCheiaActivity" android:theme="@style/AppThemeTelaCheia"></activity>
+        <!-- Adicionando um tema na telacheia-->
     </application>
 
 </manifest>
