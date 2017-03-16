@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
 <item
     android:title="Sobre"
     android:id="@+id/mnSobre"
-    android:showAsAction="always"
+    app:showAsAction="always"
     android:icon="@drawable/ic_speaker_notes_black_24dp"/>
-</item>
-<!-- Para ele aparecer dentro do actionbar e nao dentro do menu que sao os 3 pontos-->
+
+    <!-- o showAsAction é Para que os itens do menu apareçam dentro do actionbar e nao dentro do menu que sao os 3 pontos-->
 </menu>
